@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange-primary: 244 134 53;  /* #F48635 */
+  --blue-primary: 62 64 150;     /* #3E4096 */
+  --red-primary: 237 50 55;      /* #ED3237 */
+  --yellow-primary: 244 221 43;  /* #F4DD2B */
+  --gray-primary: 55 53 53;      /* #373535 */
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: var(--gray-primary);
+    --card: 0 0% 100%;
+    --card-foreground: var(--gray-primary);
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--gray-primary);
+    --primary: var(--orange-primary);
+    --primary-foreground: 0 0% 98%;
+    --secondary: var(--blue-primary);
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: var(--yellow-primary);
+    --accent-foreground: var(--gray-primary);
+    --destructive: var(--red-primary);
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: var(--orange-primary);
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
